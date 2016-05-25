@@ -1,65 +1,87 @@
-<!doctype html>
-<html>
-<head>
-    <title>Portfolio Project</title>
-
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     
-    <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="portfolio.css">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="200">
+	<nav class="navbar navbar-fixed-top navbar-light bg-faded" id="navbar">
+		<a class="navbar-brand" href="#" id="logo">Solo Enterprise</a>
+		<form class="form-inline pull-xs-right">
+    		<ul class="nav navbar-nav" id="pageLinks">
+    			<li class="nav-item">
+    				<a class="nav-link" href="#jumbotron">About <span class="sr-only">(current)</span></a>
+    			</li>
+    			<li class="nav-item">
+    			  <a class="nav-link" href="#about">Portfolio</a>
+    			</li>
+    			<li class="nav-item">
+    			  <a class="nav-link" href="#footer">Contact</a>
+    			</li>
+    		</ul>
+		</form>
+	</nav>
+	
+	<div class="jumbotron center" id="jumbotron">
+		<h1 class="display-3">My Awesome App</h1>
+		<p class="lead">This is why you should download this fantastic app!</p>
+		<hr class="m-y-2">
+	</div>
+	
+	<div class="container" id="about">
+		<div class="row center">
+			<h1>Portfolio</h1>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="card-deck-wrapper">
+			<div class="card-deck">
+				<div class="card">
+					<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/UCBerkeleyCampus.jpg" alt="University of California - Berkeley">
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp; UC-Berkeley</h4>
+						<p class="card-text">The above photo is an overhead shot of the university.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="http://www.rgkcenter.org/sites/default/files/images/ISE/UTaerial.jpg" alt="University of Texas at Austin">
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp; University of Texas</h4>
+						<p class="card-text">The above photo is an overhead shot of the university.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="http://investinmanchester.com/wp-content/uploads/university-manchester-02.jpg?e72a67" alt="University of Manchester">
+					<div class="card-block">
+						
+						<h4 class="card-title"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp; University of Manchester</h4>
+						<p class="card-text">A shot of a University of Manchester campus building.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<div id="footer">
+		<div class="row center">
+			<h2>Download the app!</h2>
+			<p class="lead">Really, why should I download the app?</p>
+			<p><a href="#"><img id="appStorePhoto" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Available_on_the_App_Store_(black).png" ></a></p>
+		</div>
+	</div>	
+	
 
-    <style>
-        html, body {
-            height: 100%;
-        }
-        .container {
-            background-image:url('./images/city-background-portfolio.png');
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .white {
-            color: white;
-        }
-        
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <nav class="navbar navbar-fixed-top">
-    	<div class="container-fluid">
-    		<!-- Brand and toggle get grouped for better mobile display -->
-    		<div class="navbar-header">
-    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-    				<span class="sr-only">Toggle navigation</span>
-    				<span class="icon-bar"></span>
-    				<span class="icon-bar"></span>
-    				<span class="icon-bar"></span>
-    			</button>
-    			<a class="navbar-brand" href="#"><strong class="white">KJ Productions</strong></a>
-    		</div>
-    		
-    		<!-- Collect the nav links, forms, and other content for toggling -->
-    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    			<ul class="nav navbar-nav navbar-right">
-    				<li><a href="#"><strong class="white">About</strong></a></li>
-    				<li><a href="#"><strong class="white">Portfolio</strong></a></li>
-    				<li><a href="#"><strong class="white">Contact</strong></a></li>
-    			</ul>
-    		</div><!-- /.navbar-collapse -->
-    	</div><!-- /.container-fluid -->
-</nav>
-    
-    
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</body>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
 </html>
